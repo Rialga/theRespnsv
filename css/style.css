@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Color panduan
+
+dark            : #3a3d39
+yellow          : #f2f5c6
+ijo biru muda   : #45c2c4
+ijo biru gelap  : #00ced1
+merah skicik    : #c7664c
+
+*/
+
+
+/* Header */
+.header{    
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 400ms      ;
+}
+
+.lock{
+    padding: 10px;
+    background-color: #3a3d39;   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 18rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    color: #f2f5c6;
+}
+
+.nav-logo {
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f2f5c6;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f2f5c6;
+}
+
+/* end header */
+
+
+
+
+
+/* Main Content  */
+.main-content{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  
+.hero {
+    height: 100vh;
+}
+
+.hero-overlay{
+    background-color: #1111115d;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 1;
+    width: 100%;
+    line-height: 100vh;
+}
+
+.hero-overlay h1{
+    font-size: 6vw;
+    color: #ffffff;
+    letter-spacing: 0.45rem;
+    font-weight: 700;
+    float: bottom;
+}
+
+.hero-image{
+    display: block;
+    overflow: visible;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container{
+
+    width: 70%;
+    padding: 60px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: white;
+
+}
+
+.card{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0.2px 0.6px 5px #9999;
+    padding: 2em;
+    border-radius: 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+/* End Of Main Contetn */
+
+
+@media only screen and (max-width: 933px) {
+    .navbar {
+        padding: 1.5rem 5rem;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 6rem;
+        flex-direction: column;
+        background-color:white;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.2s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2rem 0;
+    }
+
+    .nav-link{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #3a3d39;
+    }
+    
+    .nav-link:hover{
+        color: #00ced1;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
