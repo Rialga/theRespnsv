@@ -9,11 +9,13 @@ function mobileMenu() {
 }
 
 $(window).on('scroll',function(){
-    if($(window).scrollTop()){
-        $('header').addClass('lock')
-    }
-    else{
-        $('header').removeClass('lock')
+    if(screen.width > 933   ){
+        if($(window).scrollTop()){
+            $('header').addClass('lock')
+        }
+        else{
+            $('header').removeClass('lock')
+        }
     }
 })
 
