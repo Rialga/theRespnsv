@@ -180,16 +180,15 @@ merah skicik    : #c7664c
 }
 
 .card-header{
-
     background-color: #1c6d6e;
     box-shadow: 0.2px 0.6px 5px #9999;
     width:100%;
     border-bottom: #3a3d39;
-    padding: 2em;
+    padding: 1.2em;
+    font-size: 13px;
     padding-left: 30px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
 }
 
 .card-header h1{
@@ -198,7 +197,6 @@ merah skicik    : #c7664c
 }
 
 .card-body{
-
     width: 100%;
     min-height: 200px;
     padding: 2em;
@@ -210,23 +208,41 @@ merah skicik    : #c7664c
     display: flex;
     justify-content: end;
     font-size: medium;
-    padding: 20px 30px 20px 30px;
+    padding: 15px 30px 15px 30px;
     border-top: 1.5px solid #1c6d6e63;
 }
 
+.container-gallery{
+    display: flex;
+    width: 1000px;
+    padding: 60px;
+    min-height: 200px;
+    margin: auto;
+    font-size: medium;
+    background-color: white;
+}
+
+
 .gallery{
-    position: relative;
     box-shadow: 0.2px 0.6px 5px #9999;
     max-width: 35ch;
     border-radius: 20px;
     max-height: 70ch;
-    margin-bottom: 100px;
+    margin: 20px;
+    background-color: #1c6d6e;
 }
+
+.gallery hr{
+    margin-bottom: 10px;
+}
+
+.gallery:hover{
+    box-shadow:0px 0px 13px rgba(2, 0, 0, 0.384);
+}
+
 .gallery-image{
-    position: absolute;
     width: 100%;
     border-radius: 20px;
-
 }
 
 .gallery-image img{
@@ -238,37 +254,37 @@ merah skicik    : #c7664c
 
 
 .gallery-content{
-    position: absolute;
     font-size: small;
     z-index: 0;
     padding: 1em;
     width: 100%;
     border-radius: 20px;
     color: white;
-    background-color: #0d414252;
 }
 
  .gallery-tittle{
     margin: 10px 0px 10px 0px;
     text-align: left;
     color: white;
+    font-size: 12px;
 }
 
 .gallery-text{  
-    justify-content: flex-start;
+    text-align: start;
 }
 
 
 .button {
     cursor: pointer;
-    padding: 1em;
+    padding: 10px 20px 10px 20px;
     background-color: #f2f5c6;
-    border-radius: 20px;
+    border-radius: 10px;
     color:#3a3d39;
 }
 
 .gallery-footer{
-    margin: 30px 0px 10px 0px;
+    text-align: start;
+    margin: 30px 0px 15px 0px;
 }
 
 
